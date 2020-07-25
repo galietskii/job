@@ -1,0 +1,276 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    background: #f6f6f6;
+    padding: 22px 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container a{
+    color: black;
+    font-size: 16px;
+    padding: 27px 6px;
+    margin-right: 63px;
+}
+.container a:hover {
+    background: #ffea00;
+}
+ul {
+    display: flex;
+}
+#menu-checkbox {
+    display: none;
+}
+nav {
+margin-top: 20px;
+}
+.top-slide {
+    background: url(../images/slider_bg.png) no-repeat;
+    padding-top: 120px;
+    padding-bottom: 280px;
+}
+.top-container {
+    width: 85%;
+    margin: 0 auto;
+}
+.top-slide h2 {
+    background: #ffea00;
+    display: inline;
+    font-size: 70px;
+    padding: 0 13px;
+}
+.top-slide :nth-child(2){
+    margin-bottom: 10px;
+}
+.top-slide p{
+    font-size: 24px;
+    display: inline;
+    background: #414146;
+    color: white;
+    padding: 0 4px;
+}
+.specialize-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.specialize-container h3 {
+    font-size: 35px;
+}
+.specialize-container p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 24px;
+
+}
+.first-p {
+    font-size: 20px;
+    color: white;
+}
+.bottomcard {
+    background: #414146;
+    position: relative;
+    top: -30px;
+}
+.topcard {
+    width: 250px;
+    height: 208px;
+}
+.specilize-card {
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.portfolio h4 {
+    background: #424147;
+    padding: 0 8px;
+    display: inline-block;
+    color: #f4e104;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.portfolio p {
+    color: #414045;
+    font-size: 16px;
+}
+.toggles button {
+    border: none;
+    color: 414045;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 5px;
+
+}
+.toggles button::after {
+    content: ' / ';
+}
+.toggles button:last-child:after {
+    content: '';
+}
+.posts {
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto;
+}
+.posts img {
+    width: 250px;
+}
+.brand-slider {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.brand-slider h4 {
+    margin-top: 40px;
+    background: #424147;
+    padding: 0 8px;
+    display: inline-block;
+    color: #f4e104;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.brand-slider p {
+    color: #414045;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.footer {
+    background: #414146;
+    padding: 30px 0;
+    color: white;
+}
+.footer h4 {
+    font-size: 18px;
+}
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 30% 20%;
+    grid-column-gap: 3%;
+}
+.about-us a {
+    background: #000;
+    border-bottom: 2px solid #ffea00;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.images {
+    margin-top: 10px;
+}
+.tweets p{
+    margin-top: 20px;
+}
+.yellow {
+    color: yellow;
+}
+
+
+
+
+
+
+
+@media (max-width: 420px) {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-menu {
+        display: none;
+    }
+    .main-menu li {
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+    .main-menu a {
+        display: block;
+        padding: 8px;
+    }
+    .toogle-button {
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: black;
+        margin-top: 20px;
+    }
+    .toogle-button:after {
+        content: attr(data-open);
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toogle-button::after {
+        content: attr(data-close);
+    }
+    .container a {
+        margin-right: -65px;
+    }
+    .main-menu {
+        position: relative;
+        top: 30px;
+        right: 115px;
+    }
+    .top-slide {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .top-slide h2 {
+        font-size: 32px;
+    }
+    .top-slide p {
+        font-size: 16px;
+    }
+    .specialize-container p{
+        font-size: 16px;
+    }
+    .specilize-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottomcard {
+        width: 250px;
+    }
+    .posts {
+        grid-template-columns:  auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
