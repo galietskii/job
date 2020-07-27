@@ -90,7 +90,7 @@ margin-top: 20px;
 }
 .topcard {
     width: 250px;
-    height: 208px;
+    height: 225px;
 }
 .specilize-card {
     display: flex;
@@ -190,7 +190,17 @@ margin-top: 20px;
 .yellow {
     color: yellow;
 }
-
+.footer__social {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.contacts p {
+    display: inline;
+    margin-left: 17px;
+}
+.contacts img {
+    margin-top: 52px;
+}
 
 
 
